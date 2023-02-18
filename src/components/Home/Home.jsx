@@ -1,0 +1,72 @@
+import React from "react";
+import { Link } from "react-scroll";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Himage from "../../assets/Himage.jpg";
+import "./Home.scss";
+import Typing from "react-typing-effect";
+import Typewriter from "typewriter-effect";
+
+export default function Home() {
+  return (
+    <div id="home" className="home">
+      <div className="container-home">
+        <div className="content">
+          <h2>Hey! I Am</h2>
+          <h1 id="user-detail-name">Hrusikesh Ghadei</h1>
+          <div className="typewriter">
+            <Typewriter
+              //   style={{ color: "red", fontSize: "24px", fontFamily: "Arial" }}
+              options={{
+                strings: ["Hello I am Hrusikesh", "Welcomes You"],
+                autoStart: true,
+                loop: true,
+                cursor: "|",
+                delay: 300,
+                deleteSpeed: 80,
+              }}
+            />
+          </div>
+          <p id="user-detail-intro">
+            {/* a MERN stack developer who loves to build things. I believe that the
+            best code is code that is both functional and elegant, and I strive
+            to achieve this in all of my projects. Whether it's building a
+            responsive user interface, designing a custom API, or optimizing
+            database performance, I approach every task with enthusiasm and
+            attention to detail. Let's create something remarkable together */}
+            Full Stack Developer with expertise in front-end and back-end
+            development, committed to producing clean and efficient code to
+            enhance user experience.
+          </p>
+          {/* <Link
+            smooth
+            duration={500}
+            to="https://drive.google.com/file/d/15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp/view?usp=sharing"
+            target="_blank"
+            download
+            className="link"
+          >
+            Resume
+            <span>
+              <MdOutlineKeyboardArrowRight />
+            </span>
+          </Link> */}
+          <a
+            id="resume-button-2"
+            href="https://drive.google.com/file/d/15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp/view?usp=sharing"
+            className="link"
+            download
+          >
+            Resume
+            <span>
+              <MdOutlineKeyboardArrowRight />
+            </span>
+          </a>
+        </div>
+
+        <div className="heroImage">
+          <img class="home-img" src={Himage} alt="" />
+        </div>
+      </div>
+    </div>
+  );
+}
