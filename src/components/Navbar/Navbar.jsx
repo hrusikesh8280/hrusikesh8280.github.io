@@ -45,13 +45,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link
-            className="link"
-            to="about"
-            class="nav-link about"
-            smooth
-            duration={500}
-          >
+          <Link className="link" to="about" smooth duration={500}>
             About
           </Link>
         </li>

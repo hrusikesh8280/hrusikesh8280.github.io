@@ -1,14 +1,15 @@
 .about {
-     height: 100vh;
+      height: auto;
     // background: linear-gradient(180deg,#002429, #17273d);
     // background: linear-gradient(180deg, #1f242b, #001b35);
-     background: linear-gradient(180deg,#233247, #001b35);
+    background: linear-gradient(180deg,#233247, #001b35);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .content-about {
+    height: 100vh;
     width: 70%;
     margin: auto;
     .title-about {
