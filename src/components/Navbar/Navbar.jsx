@@ -40,13 +40,13 @@ export default function Navbar() {
       </div>
       <div className={`links`}>
         <li>
-          <Link id="link" class="nav-link home" to="home" smooth duration={500}>
+          <Link className="link" to="home" smooth duration={500}>
             Home
           </Link>
         </li>
         <li>
           <Link
-            id="link"
+            className="link"
             to="about"
             class="nav-link about"
             smooth
@@ -56,42 +56,26 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link
-            id="link"
-            to="skills"
-            class="nav-link skills"
-            smooth
-            duration={500}
-          >
+          <Link className="link" to="skills" smooth duration={500}>
             Skills
           </Link>
         </li>
         <li>
-          <Link
-            id="link"
-            to="project"
-            class="nav-link projects"
-            smooth
-            duration={500}
-          >
+          <Link className="link" to="project" smooth duration={500}>
             Project
           </Link>
         </li>
         <li>
-          <Link
-            id="link"
-            to="contact"
-            class="nav-link contact"
-            smooth
-            duration={500}
-          >
+          <Link className="link" to="contact" smooth duration={500}>
             Contact
           </Link>
         </li>
-        <li>
+        <li class="nav-link resume">
           <a
-            id="link"
+            className="link"
+            id="resume-link-1"
             href="https://drive.google.com/file/d/15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp/view?usp=share_link"
+            target="_blank"
             download
           >
             Resume

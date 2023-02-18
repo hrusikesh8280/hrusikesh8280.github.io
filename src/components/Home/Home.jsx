@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import Himage from "../../assets/Himage.jpg";
+import Himage from "../../assets/Himage.png";
 import "./Home.scss";
 import Typing from "react-typing-effect";
 import Typewriter from "typewriter-effect";
@@ -17,11 +17,17 @@ export default function Home() {
             <Typewriter
               //   style={{ color: "red", fontSize: "24px", fontFamily: "Arial" }}
               options={{
-                strings: ["Hello I am Hrusikesh", "Welcomes You"],
+                strings: [
+                  "Greetings, and welcome to my portfolio!",
+                  "As a full-stack developer, I bring ideas to life with code.",
+                  "Crafting web solutions that inspire and engage.",
+                  "Turning ideas into functional web solutions.",
+                  "Focusing on performance and user experience.",
+                ],
                 autoStart: true,
                 loop: true,
                 cursor: "|",
-                delay: 300,
+                delay: 100,
                 deleteSpeed: 80,
               }}
             />
@@ -51,8 +57,9 @@ export default function Home() {
             </span>
           </Link> */}
           <a
-            id="resume-button-2"
+            id="resume-link-2"
             href="https://drive.google.com/file/d/15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp/view?usp=sharing"
+            target="_blank"
             className="link"
             download
           >
