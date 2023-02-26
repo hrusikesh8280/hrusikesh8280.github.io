@@ -1,9 +1,11 @@
-.skills {
+.Skills {
+    // height: 100vh;
     background: linear-gradient(180deg,#001b35,#233247 );
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid red;
 }
 
 @keyframes rotate {

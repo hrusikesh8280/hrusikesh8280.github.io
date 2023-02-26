@@ -1,6 +1,6 @@
-.home {
+.Home {
    
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(180deg, black, rgb(27, 27, 27));
     background: linear-gradient(180deg,#001b35, #233247);
 }
@@ -20,7 +20,7 @@
     text-align: left;
 }
 .typewriter {
-    color: rgb(164, 175, 180) ;
+    color: rgb(101, 179, 238) ;
     font-size: 34px ;
     font-family:"Open Sans", sans-serif ;
 }
@@ -48,14 +48,14 @@
 
     .link {
 
-        background: linear-gradient(90deg ,aqua, rgba(0, 89, 255, 0.781));
+        background: linear-gradient(90deg ,rgba(131, 134, 170, 0.498), rgba(3, 38, 103, 0.629));
         padding: 13px 16px;
-        color: white;
+        color: rgb(209, 197, 195);
         display: flex;
         align-items: center;
         gap: 4px;
         width: fit-content;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         cursor: pointer;
         border-radius: 6px;
     }
@@ -72,7 +72,7 @@
 
 .heroImage {
     img {
-        width: 300px;
+        width: 600px;
         border-radius: 20px;
     }
 }

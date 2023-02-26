@@ -88,7 +88,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="skills">
+    <div id="skills" className="Skills">
       <div className="tech-content">
         <div className="tech-title">
           <h1>Skills</h1>
@@ -98,11 +98,16 @@ export default function Skills() {
           {techs.map((tech) => (
             <div
               key={tech.id}
-              className={`tech rainbow ${tech.border}`}
+              className={`skills-card tech rainbow ${tech.border}`}
               style={{ color: `${tech.style}` }}
             >
-              <img src={tech.src} alt={tech.name} loading="lazy" />
-              <p>{tech.name}</p>
+              <img
+                className="skills-card-img"
+                src={tech.src}
+                alt={tech.name}
+                loading="lazy"
+              />
+              <p className="skills-card-name">{tech.name}</p>
             </div>
           ))}
         </div>

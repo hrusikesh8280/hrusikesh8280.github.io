@@ -16,7 +16,7 @@ export default function Navbar() {
       name: "Home",
     },
     {
-      local: "about",
+      local: "About",
       name: "About",
     },
     {
@@ -39,38 +39,40 @@ export default function Navbar() {
         <h1>Hrusikesh</h1>
       </div>
       <div className={`links`}>
-        <li>
-          <Link className="link" to="home" smooth duration={500}>
+        <li className="nav-link home">
+          <Link className="link" to="Home" smooth duration={500}>
             Home
           </Link>
         </li>
-        <li>
-          <Link className="link" to="about" smooth duration={500}>
+        <li className="nav-link about">
+          <Link className="link nav-link about" to="About" smooth>
             About
           </Link>
         </li>
-        <li>
-          <Link className="link" to="skills" smooth duration={500}>
+
+        <li className="nav-link skills">
+          <Link className="link" to="Skills" smooth duration={500}>
             Skills
           </Link>
         </li>
-        <li>
-          <Link className="link" to="project" smooth duration={500}>
+
+        <li className="nav-link projects">
+          <Link className="link" to="Project" smooth duration={500}>
             Project
           </Link>
         </li>
-        <li>
-          <Link className="link" to="contact" smooth duration={500}>
+        <li className="nav-link contact">
+          <Link className="link" to="Contact" smooth duration={500}>
             Contact
           </Link>
         </li>
-        <li class="nav-link resume">
+        <li className="link nav-link resume">
           <a
             className="link"
             id="resume-link-1"
-            href="https://drive.google.com/file/d/15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp/view?usp=share_link"
+            href="https://drive.google.com/uc?export=download&id=15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp"
             target="_blank"
-            download
+            download="hrusikesh-ghadei-resume.pdf"
           >
             Resume
           </a>

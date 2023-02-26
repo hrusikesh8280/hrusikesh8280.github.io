@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import Himage from "../../assets/Himage.png";
+// import Himage from "../../assets/Himage.png";
+import developer from "../../assets/developer.gif";
+import computercode from "../../assets/computer-code.gif";
 import "./Home.scss";
 import Typing from "react-typing-effect";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (
-    <div id="home" className="home">
+    <div id="home" className="Home">
       <div className="container-home">
         <div className="content">
           <h2>Hey! I Am</h2>
@@ -71,7 +73,7 @@ export default function Home() {
         </div>
 
         <div className="heroImage">
-          <img class="home-img" src={Himage} alt="" />
+          <img class="home-img" src={developer} alt="" />
         </div>
       </div>
     </div>
