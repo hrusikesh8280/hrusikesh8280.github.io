@@ -1,14 +1,18 @@
 import React from "react";
-import { Link } from "react-scroll";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-// import Himage from "../../assets/Himage.png";
-import developer from "../../assets/developer.gif";
-import computercode from "../../assets/computer-code.gif";
+import Himage from "../../assets/Himage.png";
 import "./Home.scss";
-import Typing from "react-typing-effect";
 import Typewriter from "typewriter-effect";
+import Resume from "../../assets/Hrusikesh_Ghadei_Resume.pdf";
 
 export default function Home() {
+  const Mylink = () => {
+    window.open(
+      "https://drive.google.com/file/d/1iXXXyajLwueGmmFHde4LhFyyQb1TJLQr/view?usp=share_link",
+      "_blank"
+    );
+  };
+
   return (
     <div id="home" className="Home">
       <div className="container-home">
@@ -17,53 +21,33 @@ export default function Home() {
           <h1 id="user-detail-name">Hrusikesh Ghadei</h1>
           <div className="typewriter">
             <Typewriter
-              //   style={{ color: "red", fontSize: "24px", fontFamily: "Arial" }}
               options={{
                 strings: [
                   "Greetings, and welcome to my portfolio!",
-                  "As a full-stack developer, I bring ideas to life with code.",
                   "Crafting web solutions that inspire and engage.",
                   "Turning ideas into functional web solutions.",
                   "Focusing on performance and user experience.",
                 ],
                 autoStart: true,
                 loop: true,
-                cursor: "|",
-                delay: 100,
-                deleteSpeed: 80,
+                cursor: " ",
+                delay: 50,
+                deleteSpeed: 40,
               }}
             />
           </div>
           <p id="user-detail-intro">
-            {/* a MERN stack developer who loves to build things. I believe that the
-            best code is code that is both functional and elegant, and I strive
-            to achieve this in all of my projects. Whether it's building a
-            responsive user interface, designing a custom API, or optimizing
-            database performance, I approach every task with enthusiasm and
-            attention to detail. Let's create something remarkable together */}
             Full Stack Developer with expertise in front-end and back-end
             development, committed to producing clean and efficient code to
             enhance user experience.
           </p>
-          {/* <Link
-            smooth
-            duration={500}
-            to="https://drive.google.com/file/d/15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp/view?usp=sharing"
-            target="_blank"
-            download
-            className="link"
-          >
-            Resume
-            <span>
-              <MdOutlineKeyboardArrowRight />
-            </span>
-          </Link> */}
           <a
-            id="resume-link-2"
-            href="https://drive.google.com/file/d/15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp/view?usp=sharing"
+            id="resume-button-2"
+            href={Resume}
             target="_blank"
+            download="hrusikesh-ghadei-resume.pdf"
             className="link"
-            download
+            onClick={Mylink}
           >
             Resume
             <span>
@@ -73,7 +57,7 @@ export default function Home() {
         </div>
 
         <div className="heroImage">
-          <img class="home-img" src={developer} alt="" />
+          <img class="home-img" src={Himage} alt="" />
         </div>
       </div>
     </div>

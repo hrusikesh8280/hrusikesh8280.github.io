@@ -9,10 +9,11 @@ export default function About() {
           <h1>About</h1>
         </div>
         <div className="text-about">
-          <p>
+          <p id="user-detail-intro">
             Greetings! I am a full-stack MERN developer and a proud graduate of
             IIIT-Bhubaneswar. I am passionate about creating elegant and
-            intuitive web applications that help businesses thrive.
+            intuitive web applications that help businesses
+            {/* thrive.HTML,CSS,JS,React,MongoDB,Express */}
           </p>
 
           <p>
@@ -20,7 +21,7 @@ export default function About() {
             to deliver top-notch solutions from start to finish.
           </p>
 
-          <p>
+          <p className="ptag">
             I'm able to create your design, making it totally harmonious. I can
             also develop all parts of your web application from scratch,
             focusing in deliver the best work possible.

@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    // border: 2px solid red;
 }
 
 @keyframes rotate {
@@ -29,7 +29,7 @@
 		left: -50%;
 		top: -50%;
 		width: 200%;
-		height: 200%;
+		height: 230%; 
 		background-repeat: no-repeat;
 		background-size: 50% 50%, 50% 50%;
 		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
@@ -51,7 +51,7 @@
 }
 
 .tech-content {
-    width: 70%;
+    width: 75%;
     margin: auto;
 
     .tech-title {
@@ -60,7 +60,7 @@
             color: white;
             border-bottom: 1px solid gray;
             width: fit-content;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
     }
 
@@ -107,13 +107,13 @@
     
 }
 
-@media (max-width: 422px) {
-    .tech-title {
-        h1 {
-         padding-top: 450px;
-        }
-    }
-}
+// @media (max-width: 422px) {
+//     .tech-title {
+//         h1 {
+//          padding-top: 450px;
+//         }
+//     }
+// }
 
 @media (max-width: 1200px) {
     .tech-content {
@@ -153,16 +153,7 @@
         background-image: linear-gradient(rgb(11, 244, 252), rgb(11, 244, 252));
     }
 }
-.gitTech {
-    &::before {
-        background-image: linear-gradient(rgb(255, 78, 8), rgb(255, 37, 8));
-    }
-}
-.githubTech {
-    &::before {
-        background-image: linear-gradient(rgb(226, 226, 226), rgb(226, 226, 226));
-    }
-}
+
 .nodeTech {
     &::before {
         background-image: linear-gradient(rgb(87, 194, 60), rgb(87, 194, 60));
@@ -176,5 +167,15 @@
 .expressTech {
     &::before {
         background-image: linear-gradient(rgb(64, 56, 218), rgb(64, 56, 218));
+    }
+}
+.TypeScript {
+    &::before {
+        background-image: linear-gradient(rgb(64, 56, 218), rgb(166, 165, 173));
+    }
+}
+.TailwindTech {
+    &::before {
+        background-image: linear-gradient(rgb(126, 175, 235), rgb(232, 230, 241));
     }
 }

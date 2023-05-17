@@ -1,6 +1,6 @@
 .custom-card {
     
-    width: 90%;
+    width: 80%;
     margin: auto;
     
     padding-top: 2px;
@@ -9,7 +9,7 @@
     padding-right: 12px; */
     height: 440px;
     border-radius: 12px;
-    box-shadow: 0px 10px 20px rgba(56, 125, 255, 0.15);
+    box-shadow: 0px 10px 20px rgba(49, 103, 20, 0.866);
     display: flex;
     flex-direction: column;
     /* background-image: linear-gradient(to right, #61646e, #06136a); */
@@ -19,7 +19,7 @@
   }
   
   .custom-card:hover {
-    background-image: linear-gradient(to bottom, #2c2e35, #202327);
+    background-image: linear-gradient(to bottom, #0a8f57, #202327);
   }
   
   .card-image-container {
@@ -27,6 +27,7 @@
     height: 100%;
     overflow: hidden;
     border-radius: 12px;
+    border: 2px solid white;
   }
   
   .card-image {
@@ -43,7 +44,7 @@
   
   .card-details-container {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;

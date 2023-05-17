@@ -5,12 +5,13 @@ import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import javascript from "../../assets/javascript.png";
 import react from "../../assets/react.png";
-import git from "../../assets/git.png";
-import github from "../../assets/github.png";
+
 import chakra from "../../assets/chakra-ui.png.png";
 import node from "../../assets/node.png";
 import mongodb from "../../assets/mongodb.png";
 import express from "../../assets/express.png";
+import typescript from "../../assets/Typescript.svg.png";
+import tailwind from "../../assets/tailwind.png";
 
 export default function Skills() {
   const techs = [
@@ -29,13 +30,6 @@ export default function Skills() {
       border: "cssTech",
     },
     {
-      id: 7,
-      src: chakra,
-      name: "Chakra-ui",
-      style: "rgb(224, 101, 224)",
-      border: "ChakraTech",
-    },
-    {
       id: 3,
       src: javascript,
       name: "JavaScript",
@@ -51,17 +45,10 @@ export default function Skills() {
     },
     {
       id: 5,
-      src: git,
-      name: "Git",
+      src: typescript,
+      name: "TypeScript",
       style: "rgb(255, 78, 8)",
-      border: "gitTech",
-    },
-    {
-      id: 6,
-      src: github,
-      name: "GitHub",
-      style: "rgb(226, 226, 226)",
-      border: "githubTech",
+      border: "TypeScript",
     },
 
     {
@@ -84,6 +71,20 @@ export default function Skills() {
       name: "ExpressJS",
       style: "rgb(152, 3, 162)",
       border: "expressTech",
+    },
+    {
+      id: 7,
+      src: chakra,
+      name: "Chakra-ui",
+      style: "rgb(224, 101, 224)",
+      border: "ChakraTech",
+    },
+    {
+      id: 6,
+      src: tailwind,
+      name: "Tailwind-CSS",
+      style: "rgb(72, 133, 225)",
+      border: "TailwindTech",
     },
   ];
 

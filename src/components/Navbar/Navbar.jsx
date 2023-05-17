@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Resume from "../../assets/Hrusikesh_Ghadei_Resume.pdf";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,7 +33,12 @@ export default function Navbar() {
       name: "Contact",
     },
   ];
-
+  const Mylink = () => {
+    window.open(
+      "https://drive.google.com/file/d/1iXXXyajLwueGmmFHde4LhFyyQb1TJLQr/view?usp=share_link",
+      "_blank"
+    );
+  };
   return (
     <div id="nav-menu" className="navbar">
       <div className="logo">
@@ -45,7 +51,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li className="nav-link about">
-          <Link className="link nav-link about" to="About" smooth>
+          <Link className="link" to="About" smooth>
             About
           </Link>
         </li>
@@ -68,11 +74,12 @@ export default function Navbar() {
         </li>
         <li className="link nav-link resume">
           <a
-            className="link"
-            id="resume-link-1"
-            href="https://drive.google.com/uc?export=download&id=15JIlHxD1rWb0d0OvkdKWurCJRhsWxXcp"
+            id="resume-button-1"
+            href={Resume}
             target="_blank"
             download="hrusikesh-ghadei-resume.pdf"
+            className="link"
+            onClick={Mylink}
           >
             Resume
           </a>

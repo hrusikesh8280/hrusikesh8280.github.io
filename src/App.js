@@ -5,7 +5,9 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Skills from "./components/Skills/Skills"
 import Projects from './components/Projects/Projects';
-import { Contacts } from './components/Contacts/Contacts';
+import Contact from './components/Contacts/Contact';
+import Gitcalender from './components/Github-Calender/Gitcalender'
+import Tools from './components/Tools/Tools';
 
 function App() {
   return (
@@ -14,8 +16,11 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Tools />
       <Projects />
-      <Contacts />
+      <Gitcalender/>
+      <Contact />
+    
     </div>
   );
 }
